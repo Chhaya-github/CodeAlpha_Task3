@@ -1,0 +1,79 @@
+name: fitness_app
+description: A new Flutter project.
+
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+# Version and build number for your application.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.19.2 <3.0.0"
+
+dependencies:
+  bloc: ^8.1.1
+  cookie_jar: ^3.0.1
+  cupertino_icons: ^1.0.2
+  equatable: ^2.0.5
+  fl_chart: ^0.61.0
+  flutter:
+    sdk: flutter
+  flutter_bloc: ^8.1.2
+  flutter_dotenv: ^5.0.2
+  geolocator: ^9.0.2
+  get: ^4.6.5
+  hive: ^2.2.3
+  http: ^0.13.5
+  liquid_swipe: ^3.0.0
+  shared_preferences: ^2.0.18
+  syncfusion_flutter_charts: ^20.4.53
+  translator: ^0.1.7
+  twilio_flutter: ^0.0.9
+
+dev_dependencies:
+  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/images/notification_images/
+    - assets/images/navigation_bar_images/
+    - .env
+    - assets/model.tflite
+
+  fonts:
+    - family: DMSans
+      fonts:
+        - asset: assets/fonts/DMSans/DMSans-Italic.ttf
+          weight: 100
+          style: italic
+        - asset: assets/fonts/DMSans/DMSans-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/DMSans/DMSans-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/DMSans/DMSans-MediumItalic.ttf
+          weight: 500
+          style: italic
+        - asset: assets/fonts/DMSans/DMSans-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/DMSans/DMSans-BoldItalic.ttf
+          weight: 700
+          style: italic
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins/Poppins-Italic.ttf
+          weight: 100
+          style: italic
+        - asset: assets/fonts/Poppins/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins/Poppins-Bold.ttf
+          weight: 700
